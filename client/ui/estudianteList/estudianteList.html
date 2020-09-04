@@ -1,0 +1,20 @@
+<template name="estudianteLista2">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col">Estudiante</div>
+        <div class="col">Carne</div>
+        <div class="col">Sumatoria</div>
+      </div>
+      {{#each x in listaEstudiantes}} {{>estudiante x}} {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="estudiante">
+  <div class="row">
+    <div class="col">{{usuario}}</div>
+    <div class="col">{{carnet}}</div>
+    <div class="col">{{sumatoria}}</div>
+  </div>
+</template>
